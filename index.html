@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <title>World Clock - Omphe_L</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.42/moment-timezone-with-data.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -19,37 +21,38 @@
         </select>
       </div>
 
-      <div class="cities">
+      <div class="cities" id="los-angeles">
         <div>
           <h2>Los Angeles</h2>
-          <div class="date">2024/12/19</div>
+          <div class="date"></div>
         </div>
-        <div class="time">1:48:15 AM</div>
+        <div class="time"></div>
       </div>
 
-      <div class="cities">
+      <div class="cities" id="sydney">
         <div>
           <h2>Sydney</h2>
-          <div class="date">2024/12/19</div>
+          <div class="date"></div>
         </div>
-        <div class="time">1:48:15 AM</div>
-      </div>
-      <div class="cities">
-        <div>
-          <h2>Tokyo</h2>
-          <div class="date">2024/12/19</div>
-        </div>
-        <div class="time">1:48:15 AM</div>
+        <div class="time"></div>
       </div>
 
-      <div class="cities">
+      <div class="cities" id="tokyo">
+        <div>
+          <h2>Tokyo</h2>
+          <div class="date"></div>
+        </div>
+        <div class="time"></div>
+      </div>
+
+      <div class="cities" id="paris">
         <div>
           <h2>Paris</h2>
-          <div class="date">2024/12/19</div>
+          <div class="date"></div>
         </div>
-        <div class="time">1:48:15 AM</div>
+        <div class="time"></div>
       </div>
-      <br />
+
       <footer>
         This project was coded by
         <a href="https://github.com/OmpheL" target="_blank"
