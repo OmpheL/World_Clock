@@ -12,32 +12,102 @@
     <div class="container">
       <h1>World Clock</h1>
 
-      <select id="city">
-        <option value="">Select a city..</option>
-         <option value="current">My current location</option>
-        <option value="Europe/London">London</option>
-        <option value="America/New_York">New York</option>
-        <option value="Pacific/Auckland">Auckland</option>
-      </select>
-
-      <div id="cities">
-        <div class="city" id="los-angeles">
-          <div>
-            <h2>Los Angeles</h2>
-            <div class="date"></div>
-          </div>
-          <div class="time"></div>
-        </div>
-        <div class="city" id="paris">
-          <div>
-            <h2>Paris</h2>
-            <div class="date"></div>
-          </div>
-          <div class="time"></div>
-        </div>
-      </div>
+   <select id="city">
+    <option value="">Select a city...</option>
+    <option value="current">My current location</option>
     
+    // Africa
+    <optgroup label="Africa">
+        <option value="Africa/Lagos">Lagos</option>
+        <option value="Africa/Cairo">Cairo</option>
+        <option value="Africa/Johannesburg">Johannesburg</option>
+        <option value="Africa/Nairobi">Nairobi</option>
+        <option value="Africa/Casablanca">Casablanca</option>
+    </optgroup>
 
+    // Asia 
+    <optgroup label="Asia">
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Asia/Shanghai">Shanghai</option>
+        <option value="Asia/New_Delhi">New Delhi</option>
+        <option value="Asia/Singapore">Singapore</option>
+        <option value="Asia/Dubai">Dubai</option>
+    </optgroup>
+
+    // Europe
+    <optgroup label="Europe">
+        <option value="Europe/London">London</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="Europe/Berlin">Berlin</option>
+        <option value="Europe/Madrid">Madrid</option>
+        <option value="Europe/Rome">Rome</option>
+    </optgroup>
+
+   //North America 
+    <optgroup label="North America">
+        <option value="America/New_York">New York</option>
+        <option value="America/Toronto">Toronto</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
+        <option value="America/Mexico_City">Mexico City</option>
+        <option value="America/Chicago">Chicago</option>
+    </optgroup>
+
+    // South America 
+    <optgroup label="South America">
+        <option value="America/Sao_Paulo">São Paulo</option>
+        <option value="America/Buenos_Aires">Buenos Aires</option>
+        <option value="America/Bogota">Bogotá</option>
+        <option value="America/Lima">Lima</option>
+        <option value="America/Santiago">Santiago</option>
+    </optgroup>
+
+    // Oceania 
+    <optgroup label="Oceania">
+        <option value="Pacific/Auckland">Auckland</option>
+        <option value="Pacific/Sydney">Sydney</option>
+        <option value="Pacific/Melbourne">Melbourne</option>
+        <option value="Pacific/Fiji">Fiji</option>
+        <option value="Pacific/Port_Moresby">Port Moresby</option>
+    </optgroup>
+</select>
+
+<div id="cities">
+  <!-- Los Angeles -->
+  <div class="city" id="los-angeles">
+    <div>
+      <h2>Los Angeles</h2>
+      <div class="date"></div>
+    </div>
+    <div class="time"></div>
+  </div>
+
+  <!-- Paris -->
+  <div class="city" id="paris">
+    <div>
+      <h2>Paris</h2>
+      <div class="date"></div>
+    </div>
+    <div class="time"></div>
+  </div>
+
+  <!-- Johannesburg -->
+  <div class="city" id="johannesburg">
+    <div>
+      <h2>Johannesburg</h2>
+      <div class="date"></div>
+    </div>
+    <div class="time"></div>
+  </div>
+
+  <!-- Tokyo -->
+  <div class="city" id="tokyo">
+    <div>
+      <h2>Tokyo</h2>
+      <div class="date"></div>
+    </div>
+    <div class="time"></div>
+  </div>
+</div>   
     <footer>
       This project was coded by
       <a href="https://github.com/OmpheL" target="_blank">Omphemetse Lekaba</a>

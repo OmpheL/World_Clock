@@ -1,65 +1,208 @@
+/*body styles */
 body {
-  background-color: #f9f7fe;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
 }
 
+/* Background image for the body */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/153/230/original/usgs-5WWgv98ijbs-unsplash.jpg?1734739282");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* Header styles */
 h1 {
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
+  color: black;
+  margin-bottom: 40px;
 }
 
 h2 {
   margin: 0 0 5px;
   font-size: 28px;
+  color: black;
 }
 
+/* Select dropdown styles */
 select {
   display: block;
   width: 100%;
   font-size: 18px;
   border-radius: 4px;
   padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+select:focus {
+  border-color: black;
+  outline: none;
+  box-shadow: 0 0 8px rgba(75, 0, 130, 0.5);
+}
+
+/* Container styles */
 .container {
   max-width: 600px;
-  margin: 60px auto;
-  background: white;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.4);
   padding: 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 10px;
+  box-shadow: rgba(36, 35, 35, 0.1) 0px 10px 20px 0px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
 }
 
+/* City section styles */
 .city {
   display: flex;
   margin: 10px 0;
   justify-content: space-between;
   padding: 30px 0;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for cities */
+.city:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.02);
 }
 
 .city:last-child {
   border: none;
 }
 
+/* Date and time styles */
 .date {
+  font-size: 14px;
+  color: black;
   opacity: 0.7;
 }
 
 .time {
   font-size: 48px;
   font-weight: bold;
+  color: black;
 }
 
 .time small {
   font-size: 24px;
   vertical-align: middle;
   line-height: 48px;
+  color: black;
 }
 
+/* Footer styles */
 footer {
   text-align: center;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  color: black;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  position: static;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller screens */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .city {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .time {
+    font-size: 36px;
+  }
+
+  .time small {
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .city {
+    flex-direction: column;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .time {
+    font-size: 30px;
+  }
+
+  .time small {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 12px;
+  }
 }
